@@ -3,3 +3,42 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+/* temporary styles for structural HTML */
+
+*{
+    padding: 0.5rem;
+    border: 1px solid grey;
+}
+
+header{
+    border: none;
+}
+
+body{
+    border: none;
+}
+
+
+/* image styles */
+.bg-image{
+    background-image: url(/Assets/the-sleep-co-1.jpg);
+    background-size: cover;
+    min-height: 10rem ;
+}
+
+/* Universal styles & utility classes */
+
+.padded { padding:5%; }
+
+.padded-sm { padding: 1rem; }
+
+.bg-dark{
+    background-color:#192837;
+    color:white
+}
+
+.bg-white{
+    background-color:white;
+    color: #192837;
+}
