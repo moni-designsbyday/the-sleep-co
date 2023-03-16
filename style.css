@@ -1,3 +1,11 @@
+/* colours: 
+    Yellow- #ffbe00
+    Navy- #192837
+    White- #ffffff
+ */
+
+ /* Google Font Catamaran (200, 400, 700, 900) */
+
 *{
     padding: 0%;
     margin: 0%;
@@ -7,16 +15,16 @@
 /* temporary styles for structural HTML */
 
 *{
-    padding: 0.5rem;
-    border: 1px solid grey;
+    border: 2px solid grey;
 }
 
 header{
-    border: none;
+    
 }
 
 body{
-    border: none;
+    font-family: 'Catamaran' sans-serif;
+    color: #192837;
 }
 
 
@@ -38,7 +46,36 @@ body{
     color:white
 }
 
+.featured-text  {color: #ffbe00}
+
 .bg-white{
     background-color:white;
     color: #192837;
+}
+
+.regular-weight{ font-weight: 400;}
+
+.text-left  {text-align: left;}
+
+.text-center    {text-align: center;}
+
+.text-right {text-align: right;}
+
+.tall-80{min-height: 80vh;}
+
+.tall-90{min-height: 90vh;}
+
+.tall-100{min-height: 100vh;}
+
+/* ---------- Header Styles ---------- */
+
+header {
+    background-image: url(/Assets/the-sleep-co-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header h3{
+    font-size: 5.5rem;
+    line-height:1;
 }
