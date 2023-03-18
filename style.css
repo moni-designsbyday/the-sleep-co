@@ -12,16 +12,6 @@
     box-sizing: border-box;
 } */
 
-/* temporary styles for structural HTML */
-
-/* *{
-    border: 2px solid grey;
-} */
-
-header{
-    
-}
-
 body{
     font-family: 'Catamaran', sans-serif;
     color: #192837;
@@ -38,15 +28,36 @@ body{
 /* Universal styles & utility classes */
 
 .padded { padding:5%; }
-
 .padded-sm { padding: 1rem; }
+.padded-lg { padding: 10%;}
 
 .bg-dark{
     background-color:#192837;
     color:white
 }
 
-.featured-text  {color: #ffbe00}
+.featured-text-yellow  {color: #ffbe00}
+.featured-text-white  {color: #ffffff}
+
+.small-text{ font-size: 1.5rem; }
+.medium-text { 
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+.big-text{ font-size: 4.5rem; }
+
+.subtitle{
+    font-size: 1rem;
+    color: rgb(120 120 125);
+
+}
+
+.quote-icon{
+    font-size: 6rem;
+    display: inline;
+    color: rgb(120 120 125);
+    line-height: 1;
+}
 
 .bg-white{
     background-color:white;
@@ -57,7 +68,7 @@ body{
     min-heigh: 200vh;
 }
 
-/* ---------- Header Styles ---------- */
+/* ---------- Header & footer Styles ---------- */
 
 header {
     background-image: url(/Assets/the-sleep-co-4.jpg);
@@ -65,9 +76,13 @@ header {
     background-position: center;
 }
 
+footer a{
+    border: none;
+}
+
 header h3{
     font-size: 5.5rem;
-    line-height:1;
+    line-height: 0;
 }
 
 /*---------- Typography styles ----------*/
@@ -116,3 +131,44 @@ p:last-child {
     margin-bottom: 0;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a:hover{
+    color: #ffbe00;
+}
+
+h3{
+    line-height: 1;
+}
+
+
+/* ---------- Background Images ---------- */
+
+.bg-bed{
+    background-image: url('/Assets/the-sleep-co-3.jpg');
+    background-position: 37% 9%;
+
+}
+
+.bg-pug{
+    background-image: url('/Assets/the-sleep-co-1.jpg');
+    background-position: 24% 34%;
+}
+
+.bg-pillow{
+    background-image: url('/Assets/the-sleep-co-2.jpg');
+    background-position: 100% 59%;
+}
+
+/* Icon Grid */
+
+.fa-solid{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
