@@ -6,11 +6,11 @@
 
  /* Google Font Catamaran (200, 400, 700, 900) */
 
-/* *{
+*{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-} */
+}
 
 body{
     font-family: 'Catamaran', sans-serif;
