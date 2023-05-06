@@ -36,8 +36,12 @@ body{
     color:white
 }
 
+.bg-featured {background-color: #ffbe00;}
+.bg-light {background-color: #E3ECE2;}
+
 .featured-text-yellow  {color: #ffbe00}
 .featured-text-white  {color: #ffffff}
+
 
 .small-text{ font-size: 1.5rem; }
 .medium-text { 
@@ -78,7 +82,7 @@ footer a{border: none;}
 
 header h3{
     font-size: 5.5rem;
-    line-height: 0;
+    line-height: 1;
 }
 
 /*---------- Typography styles ----------*/
@@ -92,6 +96,8 @@ header h3{
 .text-center    {text-align: center;}
 .text-right {text-align: right;}
 
+.tall-30{min-height: 30vh;}
+.tall-40{min-height: 40vh;}
 .tall-50{min-height: 50vh;}
 .tall-60{min-height: 60vh;}
 .tall-70{min-height: 70vh;}
@@ -99,7 +105,21 @@ header h3{
 .tall-90{min-height: 90vh;}
 .tall-100{min-height: 100vh;}
 
+.object-left  {object-position: left;}
+.object-center    {object-position: center;}
+.object-right {object-position: right;}
+
+.captials {text-transform: uppercase;}
+
+.inline-block {display: inline-block;}
+.block        {display: block;}
+
 /* Heading specific Typography styling */
+
+h2,h3,h4,h5,h6{
+    margin-bottom: 1rem;
+    line-height: 1.1rem;
+}
 
 h2 {
     font-size: 2.5rem;
@@ -116,9 +136,12 @@ p{
 }
 
 p:last-child {margin-bottom: 0;}
-h3:last-child { margin-bottom: 0;}
-h1:last-child {margin-bottom: 0;}
+h1:last-child { margin-bottom: 0;}
 h2:last-child {margin-bottom: 0;}
+h3:last-child {margin-bottom: 0;}
+h4:last-child {margin-bottom: 0;}
+h5:last-child {margin-bottom: 0;}
+h6:last-child {margin-bottom: 0;}
 
 a{
     color: inherit;
@@ -147,6 +170,10 @@ a:hover{color: #ffbe00;}
     background-image: url('/Assets/the-sleep-co-2.jpg');
     background-position: 100% 59%;
 }
+
+.landscape{padding-bottom: 65%;}
+.portrait{padding-bottom: 125%;}
+.square{padding-bottom: 100%;}
 
 /* Icon Grid */
 
