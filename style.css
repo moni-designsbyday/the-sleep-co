@@ -29,6 +29,9 @@ body{
 
 .padded { padding:5%; }
 .padded-sm { padding: 1rem; }
+
+.padded-md { padding: 3rem; }
+
 .padded-lg { padding: 10%;}
 
 .bg-dark{
@@ -182,4 +185,9 @@ a:hover{color: #ffbe00;}
     text-align: center;
     margin-bottom: 2rem;
     font-size: 4rem;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
 }
