@@ -149,7 +149,7 @@ h6:last-child {margin-bottom: 0;}
 a{
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid;
+   
 }
 a:hover{color: #ffbe00;}
 
@@ -218,6 +218,61 @@ textarea:focus{
 
 nav a{
     padding: 0.5rem;
+    text-decoration: none;
 }
 
 .logo h2{margin-bottom: 0;}
+
+
+
+/* ---------- General CSS Responsive styles ---------- */
+
+
+/* --- MEDIA Query Medium --- */
+
+@media(max-width:54em){
+    .show-sm { display:block;}
+    .hide-sm { display:none;}
+
+    .md-tall-80 {min-height: 80vh;}
+}
+
+/* --- MEDIA Query Small --- */
+
+@media(max-width:48em) {
+    .show-sm { display:block;}
+    .hide-sm { display:none;}
+
+    .sm-text-center { text-align: center; }
+  .sm-text-left { text-align: left; }
+  .sm-text-right { text-align: right; }
+
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+}
+
+/* --- MEDIA Query Extra Small --- */
+
+@media (max-width: 36em) {
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+/* --- MEDIA Query XXS--- */
+
+@media (max-width: 25em) {
+    [class*=grid] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
