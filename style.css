@@ -199,7 +199,20 @@ input, textarea {
 input:focus
 textarea:focus{
     border: 2px solid #ffbe00;
-    outline: none;}
+    outline: none;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    appearance: none;
+    border: 2px solid #ffbe00;
+    color: inherit;
+}
+.button:hover {
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+}
 
 /* CUSTOM ADJUSTMENTS */
 
