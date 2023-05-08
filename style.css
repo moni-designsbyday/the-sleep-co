@@ -231,6 +231,9 @@ nav a{
 /* --- MEDIA Query Medium --- */
 
 @media(max-width:54em){
+
+    body{border: 2px solid purple; padding: 0.5rem;}
+
     .show-sm { display:block;}
     .hide-sm { display:none;}
 
@@ -240,6 +243,9 @@ nav a{
 /* --- MEDIA Query Small --- */
 
 @media(max-width:48em) {
+
+    body{border: 2px solid green; padding: 0.5rem;}
+
     .show-sm { display:block;}
     .hide-sm { display:none;}
 
@@ -265,12 +271,19 @@ nav a{
 /* --- MEDIA Query Extra Small --- */
 
 @media (max-width: 36em) {
+
+    body{border: 2px solid blue;
+    padding:0.5rem;}
+
     .show-xs { display: block; }
     .hide-xs { display: none;  }
 
 /* --- MEDIA Query XXS--- */
 
 @media (max-width: 25em) {
+
+    body{border: 2px solid lightblue; padding: 0.5rem;}
+
     [class*=grid] .xxs-stack {
         flex-basis: 100%;
         max-width: 100%;
