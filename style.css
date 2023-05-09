@@ -22,7 +22,6 @@ body{
 .bg-image{
     background-image: url(/Assets/the-sleep-co-1.jpg);
     background-size: cover;
-    min-height: 10px ;
 }
 
 /* Universal styles & utility classes */
@@ -268,6 +267,10 @@ nav a{
   .sm-margin-r-0 { margin-right: 0; }
 }
 
+    .logo h2 {font-size: 2rem;} 
+    header h3 {font-size: 11vw;}
+    header h1 {font-size: 5vw;}
+
 /* --- MEDIA Query Extra Small --- */
 
 @media (max-width: 36em) {
@@ -275,8 +278,14 @@ nav a{
     body{border: 2px solid blue;
     padding:0.5rem;}
 
+    
+
     .show-xs { display: block; }
     .hide-xs { display: none;  }
+
+    
+
+
 
 /* --- MEDIA Query XXS--- */
 
@@ -285,6 +294,13 @@ nav a{
     body{border: 2px solid lightblue; padding: 0.5rem;}
 
     [class*=grid] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    h1{font-size: 1.4rem;
+    line-height: 1.1;}
+
+    .xxs-stack {
         flex-basis: 100%;
         max-width: 100%;
     }
