@@ -233,10 +233,17 @@ nav a{
 
     body{border: 2px solid purple; padding: 0.5rem;}
 
+    .show-md { display:block;}
+    .hide-md { display:none;}
+
     .show-sm { display:block;}
     .hide-sm { display:none;}
 
     .md-tall-80 {min-height: 80vh;}
+
+    .a-catchy-heading {font-size: 5vw;}
+    .a-catchy-heading-para {font-size: 2.5vw;}
+
 }
 
 /* --- MEDIA Query Small --- */
@@ -271,6 +278,9 @@ nav a{
     header h3 {font-size: 11vw;}
     header h1 {font-size: 5vw;}
 
+    .video {min-height: 80vh;}
+    
+
 /* --- MEDIA Query Extra Small --- */
 
 @media (max-width: 36em) {
@@ -283,9 +293,8 @@ nav a{
     .show-xs { display: block; }
     .hide-xs { display: none;  }
 
-    
-
-
+    .a-catchy-heading {font-size: 1.4rem;}
+    .a-catchy-heading-para {font-size: 0.75rem;}
 
 /* --- MEDIA Query XXS--- */
 
