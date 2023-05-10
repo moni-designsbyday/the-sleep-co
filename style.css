@@ -279,6 +279,9 @@ nav a{
     header h1 {font-size: 5vw;}
 
     .video {min-height: 80vh;}
+
+    .sm-a-catchy-heading {font-size: 1.4rem;}
+    .sm-a-catchy-heading-para {font-size: 0.5rem;}
     
 
 /* --- MEDIA Query Extra Small --- */
@@ -288,10 +291,13 @@ nav a{
     body{border: 2px solid blue;
     padding:0.5rem;}
 
-    
+   .xs-tall-30 {min-height: 30vh;}
 
     .show-xs { display: block; }
     .hide-xs { display: none;  }
+
+    .xs-padded-1 { padding: 1rem; }
+    .xs-margin-b-0 { margin-bottom: 0; }
 
     .a-catchy-heading {font-size: 1.4rem;}
     .a-catchy-heading-para {font-size: 0.75rem;}
