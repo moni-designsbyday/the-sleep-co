@@ -1,5 +1,14 @@
 ---
 layout: default
+features:
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores magnam fuga mollitia, assumenda cumque dolor in. Ducimus inventore assumenda quaerat ab pariatur est nisi optio aperiam sint perspiciatis. Soluta?
+ - icon:
+   description:
+ - icon:
+   description:
+ - icon:
+   description:
 ---
     <!---------------- Header Banner ----------------->
     <header class="padded grid text-center tall-90 md-tall-80">
@@ -43,26 +52,12 @@ layout: default
             <h2> <span class="featured-text">features</span>  you will love </h2>
         </div>
 
+        {% for item in page.features %}
         <div class="padded-sm col-3_sm-6 editable xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores magnam fuga mollitia, assumenda cumque dolor in. Ducimus inventore assumenda quaerat ab pariatur est nisi optio aperiam sint perspiciatis. Soluta?</p>
+            <i class="{{item.icon}}"></i>
+            <p> {{ item.description }} </p>
         </div>
-
-        <div class="padded-sm col-3_sm-6 editable xxs-stack">
-            <!-- The icons by default as text inline already -->
-            <i class="fa-solid fa-cloud"></i> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ullam sint eius! Ducimus assumenda id at minima repudiandae quas quaerat cupiditate hic excepturi perspiciatis sunt, quia obcaecati recusandae qui sint?</p>
-        </div>
-
-        <div class="padded-sm col-3_sm-6 editable xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam atque, iste perspiciatis, provident neque fuga culpa quis consequatur sed eaque alias nihil nostrum suscipit. Molestiae explicabo possimus vero ullam aliquid.</p>
-        </div>
-
-        <div class="padded-sm col-3_sm-6 editable xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam. Aliquam, rerum ex! Minus delectus facilis non ipsum sit ea modi at error corporis.</p>
-        </div>
+        {% endfor %}
 
     </section>
 
