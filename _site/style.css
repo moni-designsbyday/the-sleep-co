@@ -1,0 +1,322 @@
+/* colours: 
+    Yellow- #ffbe00
+    Navy- #192837
+    White- #ffffff
+ */
+
+ /* Google Font Catamaran (200, 400, 700, 900) */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    color: #192837;
+}
+
+
+/* image styles */
+.bg-image{
+    background-image: url(/Assets/the-sleep-co-1.jpg);
+    background-size: cover;
+}
+
+/* Universal styles & utility classes */
+
+.padded { padding:5%; }
+.padded-sm { padding: 1rem; }
+
+.padded-md { padding: 3rem; }
+
+.padded-lg { padding: 10%;}
+
+.bg-dark{
+    background-color:#192837;
+    color:white
+}
+
+.bg-featured {background-color: #ffbe00;}
+.bg-light {background-color: #E3ECE2;}
+
+.featured-text-yellow  {color: #ffbe00}
+.featured-text-white  {color: #ffffff}
+
+
+.small-text{ font-size: 1.5rem; }
+.medium-text { 
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+.big-text {font-size: 4.5rem; }
+
+.subtitle{
+    font-size: 1rem;
+    color: rgb(120 120 125);
+
+}
+
+.quote-icon{
+    font-size: 6rem;
+    display: inline;
+    color: rgb(120 120 125);
+    line-height: 1;
+}
+
+.bg-white{
+    background-color:white;
+    color: #192837;
+}
+
+.grid{min-heigh: 200vh;}
+
+/* ---------- Header & footer Styles ---------- */
+
+header {
+    background-image: url(/Assets/the-sleep-co-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer a{border: none;}
+
+header h3{
+    font-size: 5.5rem;
+    line-height: 1;
+}
+
+/*---------- Typography styles ----------*/
+
+.font-weight-thin{ font-weight: 200;}
+.font-weight-regular{ font-weight: 400;}
+.font-weight-medium{ font-weight: 700;}
+.font-weight-extra-bold{ font-weight: 900;}
+
+.text-left  {text-align: left;}
+.text-center    {text-align: center;}
+.text-right {text-align: right;}
+
+.tall-30{min-height: 30vh;}
+.tall-40{min-height: 40vh;}
+.tall-50{min-height: 50vh;}
+.tall-60{min-height: 60vh;}
+.tall-70{min-height: 70vh;}
+.tall-80{min-height: 80vh;}
+.tall-90{min-height: 90vh;}
+.tall-100{min-height: 100vh;}
+
+.object-left  {object-position: left;}
+.object-center    {object-position: center;}
+.object-right {object-position: right;}
+
+.captials {text-transform: uppercase;}
+
+.inline-block {display: inline-block;}
+.block        {display: block;}
+
+/* Heading specific Typography styling */
+
+h2,h3,h4,h5,h6{
+    margin-bottom: 1rem;
+    line-height: 1.1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+h3{line-height: 1;}
+
+p{
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child {margin-bottom: 0;}
+h1:last-child { margin-bottom: 0;}
+h2:last-child {margin-bottom: 0;}
+h3:last-child {margin-bottom: 0;}
+h4:last-child {margin-bottom: 0;}
+h5:last-child {margin-bottom: 0;}
+h6:last-child {margin-bottom: 0;}
+
+a{
+    color: inherit;
+    text-decoration: none;
+   
+}
+a:hover{color: #ffbe00;}
+
+
+
+/* ---------- Background Images ---------- */
+
+.bg-bed{
+    background-image: url('/Assets/the-sleep-co-3.jpg');
+    background-position: 37% 9%;
+
+}
+
+.bg-pug{
+    background-image: url('/Assets/the-sleep-co-1.jpg');
+    background-position: 24% 34%;
+}
+
+.bg-pillow{
+    background-image: url('/Assets/the-sleep-co-2.jpg');
+    background-position: 100% 59%;
+}
+
+.landscape{padding-bottom: 65%;}
+.portrait{padding-bottom: 125%;}
+.square{padding-bottom: 100%;}
+
+/* Icon Grid */
+
+.fa-solid{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+}
+
+input:focus
+textarea:focus{
+    border: 2px solid #ffbe00;
+    outline: none;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    appearance: none;
+    border: 2px solid #ffbe00;
+    color: inherit;
+}
+.button:hover {
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+}
+
+/* CUSTOM ADJUSTMENTS */
+
+nav a{
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.logo h2{margin-bottom: 0;}
+
+
+
+/* ---------- General CSS Responsive styles ---------- */
+
+
+/* --- MEDIA Query Medium --- */
+
+@media(max-width:54em){
+
+    /* body{border: 2px solid purple; padding: 0.5rem;} */
+
+    .show-md { display:block;}
+    .hide-md { display:none;}
+
+    .show-sm { display:block;}
+    .hide-sm { display:none;}
+
+    .md-tall-80 {min-height: 80vh;}
+
+    .a-catchy-heading {font-size: 5vw;}
+    .a-catchy-heading-para {font-size: 2.5vw;}
+
+}
+
+/* --- MEDIA Query Small --- */
+
+@media(max-width:48em) {
+
+    /* body{border: 2px solid green; padding: 0.5rem;} */
+
+    .show-sm { display:block;}
+    .hide-sm { display:none;}
+
+    .sm-text-center { text-align: center; }
+  .sm-text-left { text-align: left; }
+  .sm-text-right { text-align: right; }
+
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+}
+
+    .logo h2 {font-size: 2rem;} 
+    header h3 {font-size: 11vw;}
+    header h1 {font-size: 5vw;}
+
+    .video {min-height: 80vh;}
+
+    .sm-a-catchy-heading {font-size: 1.4rem;}
+    .sm-a-catchy-heading-para {font-size: 0.5rem;}
+    
+
+/* --- MEDIA Query Extra Small --- */
+
+@media (max-width: 36em) {
+
+    /* body{border: 2px solid blue; */
+    padding:0.5rem;}
+
+   .xs-tall-30 {min-height: 30vh;}
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    .xs-padded-1 { padding: 1rem; }
+    .xs-margin-b-0 { margin-bottom: 0; }
+
+    .a-catchy-heading {font-size: 1.4rem;}
+    .a-catchy-heading-para {font-size: 0.75rem;}
+
+/* --- MEDIA Query XXS--- */
+
+@media (max-width: 25em) {
+
+    /* body{border: 2px solid lightblue; padding: 0.5rem;} */
+
+    [class*=grid] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    h1{font-size: 1.4rem;
+    line-height: 1.1;}
+
+    .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
