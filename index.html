@@ -1,10 +1,10 @@
 ---
 layout: default
-features:
+featured:
  - icon: fa-solid fa-cloud
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores magnam fuga mollitia, assumenda cumque dolor in. Ducimus inventore assumenda quaerat ab pariatur est nisi optio aperiam sint perspiciatis. Soluta?
- - icon:
-   description:
+ - icon: fa-solid fa-leaf
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores magnam fuga mollitia, assumenda cumque dolor in. Ducimus inventore assumenda quaerat ab pariatur est nisi optio aperiam sint perspiciatis. Soluta?
  - icon:
    description:
  - icon:
@@ -52,9 +52,9 @@ features:
             <h2> <span class="featured-text">features</span>  you will love </h2>
         </div>
 
-        {% for item in page.features %}
+        {% for item in page.featured %}
         <div class="padded-sm col-3_sm-6 editable xxs-stack">
-            <i class="{{item.icon}}"></i>
+            <i class="{{ item.icon }}"></i>
             <p> {{ item.description }} </p>
         </div>
         {% endfor %}

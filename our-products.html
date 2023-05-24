@@ -1,5 +1,12 @@
 ---
 layout: default
+cards:
+ - heading: Small heading
+ - description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam.
+ - heading: Small heading
+ - description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam.
+ - heading: Small heading
+ - description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam
 ---
                          <!---------------- Header Banner ----------------->
     <header class="padded-md grid-middle text-center tall-70">
@@ -45,36 +52,17 @@ layout: default
 
     <!-- CARD 1 -->
     <section class="grid padded">
+        {% for item in page.cards %}
         <div class="col-4_sm-6_xs-12 padded-sm">
             <div class="card">
                 <div class="bg-image portrait"></div>
                 <div class="padded-1">
-                    <h3>little heading</h3>
-                    <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam. Aliquam, rerum ex! Minus delectus facilis non ipsum sit ea modi at error corporis.</p>
+                    <h3>{{item.heading}}</h3>
+                    <p class="editable">{{item.description}}</p>
                 </div>
             </div>
-        </div>
-        <!-- CARD 2 -->
-        <div class="col-4_sm-6_xs-12 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3>little heading</h3>
-                    <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam. Aliquam, rerum ex! Minus delectus facilis non ipsum sit ea modi at error corporis.</p>
-                </div>
-            </div>
-        </div>
-        <!-- CARD 3 -->
-        <div class="col-4_sm-12 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3>little heading</h3>
-                    <p class="editable"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum eius, et rem maxime numquam quisquam. Aliquam, rerum ex! Minus delectus facilis non ipsum sit ea modi at error corporis.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </div> 
+        {% endfor %}
 
     <!------------ BANNER ------------>
     <section class="padded text-center tall-70 grid bg-dark">
