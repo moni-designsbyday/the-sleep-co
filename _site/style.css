@@ -231,7 +231,7 @@ nav a{
 
 @media(max-width:54em){
 
-    /* body{border: 2px solid purple; padding: 0.5rem;} */
+    body{border: 2px solid purple; padding: 0.5rem;}
 
     .show-md { display:block;}
     .hide-md { display:none;}
@@ -250,11 +250,10 @@ nav a{
 
 @media(max-width:48em) {
 
-    /* body{border: 2px solid green; padding: 0.5rem;} */
+    body{border: 2px solid green; padding: 0.5rem;}
 
     .show-sm { display:block;}
-    .hide-sm { display:none;}
-    .mobile-menu { display: none;}
+    .hide-sm, .mobile-menu { display:none;}
 
     .sm-text-center { text-align: center; }
   .sm-text-left { text-align: left; }
