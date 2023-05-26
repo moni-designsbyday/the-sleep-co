@@ -70,7 +70,7 @@ body{
     color: #192837;
 }
 
-.grid{min-heigh: 200vh;}
+.grid{min-height: 30vh;}
 
 /* ---------- Header & footer Styles ---------- */
 
@@ -288,8 +288,9 @@ nav a{
 
 @media (max-width: 36em) {
 
-    /* body{border: 2px solid blue; */
-    padding:0.5rem;}
+    body{
+        /* border: 2px solid blue; */
+    padding: 0.5rem;}
 
    .xs-tall-30 {min-height: 30vh;}
 
@@ -319,4 +320,4 @@ nav a{
         flex-basis: 100%;
         max-width: 100%;
     }
-}
+}}
