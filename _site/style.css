@@ -226,6 +226,7 @@ nav a{
 
 /* ---------- General CSS Responsive styles ---------- */
 
+.show-sm {display: none;}
 
 /* --- MEDIA Query Medium --- */
 
