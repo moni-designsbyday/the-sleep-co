@@ -1,8 +1,8 @@
 // A $( document ).ready() block.
 $(document).ready(function() {
-    $(".hamburger-button").click(function() {
-        $(this).toggleClass("active");
-        $(".mobile-menu").fadeToggle()
+    $('.hamburger-button').click(function(){
+        $('.mobile-menu').slideToggle(100);  
+        $(this).toggleClass('active');
     });
 });
 

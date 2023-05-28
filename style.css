@@ -222,11 +222,58 @@ nav a{
 
 .logo h2{margin-bottom: 0;}
 
+/* .mobile-menu {
+    position: fixed;
+    top, left, right, bottom: 0;
+}
+
+.mobile-menu a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+ }
+
+.hamburger-button{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    z-index: 2;   
+} */
+/* -------------------------------------------------------------------- */
+.hamburger-button.active{
+    background-color: #ffffff;
+    color: #ffbe00;
+  }
+  
+  .mobile-menu {
+    display: none;
+    background-color: #ffbe00;
+    padding: 5%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5vh 5%;
+    display: block;
+  }
 
 
 /* ---------- General CSS Responsive styles ---------- */
 
-.show-sm {display: none;}
+.show-xs
+.show-sm
+.show-md {display: none;}
+
+.mobile-menu {display: none;}
 
 /* --- MEDIA Query Medium --- */
 
@@ -244,7 +291,6 @@ nav a{
 
     .a-catchy-heading {font-size: 5vw;}
     .a-catchy-heading-para {font-size: 2.5vw;}
-
 }
 
 /* --- MEDIA Query Small --- */
@@ -254,7 +300,7 @@ nav a{
     body{border: 2px solid green; padding: 0.5rem;}
 
     .show-sm { display:block;}
-    .hide-sm, .mobile-menu { display:none;}
+    .hide-sm { display:none;}
 
     .sm-text-center { text-align: center; }
   .sm-text-left { text-align: left; }
@@ -290,10 +336,17 @@ nav a{
 @media (max-width: 36em) {
 
     body{
-        /* border: 2px solid blue; */
+        border: 2px solid blue;
     padding: 0.5rem;}
 
    .xs-tall-30 {min-height: 30vh;}
+
+   .xs-position {
+    position: absolute;
+    top: 15vh;
+    right: 43vw;
+    font-size: .25rem;
+}
 
     .show-xs { display: block; }
     .hide-xs { display: none;  }
@@ -308,7 +361,7 @@ nav a{
 
 @media (max-width: 25em) {
 
-    /* body{border: 2px solid lightblue; padding: 0.5rem;} */
+    body{border: 2px solid lightblue; padding: 0.5rem;}
 
     [class*=grid] .xxs-stack {
         flex-basis: 100%;
