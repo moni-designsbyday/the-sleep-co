@@ -298,7 +298,6 @@ nav a{
 
     body{border: 2px solid green; padding: 0.5rem;}
 
-    .show-sm { display:block;}
     .hide-sm { display:none;}
 
     .sm-text-center { text-align: center; }
