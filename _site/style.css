@@ -251,6 +251,7 @@ nav a{
     transform: rotate(90deg);
     top: 10vh;
     right: 8vw;
+    z-index: 3;
   }
 
   .hamburger-button.active i:hover{
@@ -267,6 +268,7 @@ nav a{
     display: none;
     background-color: #ffbe00;
     color: #ffffff;
+    z-index: 2;
 }
 
 .mobile-menu a {
@@ -275,10 +277,12 @@ nav a{
     padding: 6vh 0%;
     text-decoration: none;
     color: inherit;
+    
  }
 
  .mobile-menu a:hover{
     color: #192837;
+    
 }
 
 /* ---------- General CSS Responsive styles ---------- */
