@@ -70,7 +70,7 @@ body{
     color: #192837;
 }
 
-.grid{min-height: 30vh;}
+.grid{min-height: 30vh; min-width: 100vw;}
 
 /* ---------- Header & footer Styles ---------- */
 
