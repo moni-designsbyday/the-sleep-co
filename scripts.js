@@ -4,5 +4,9 @@ $(document).ready(function() {
         $('.mobile-menu').slideToggle(100);  
         $(this).toggleClass('active');
     });
+
+    //Animate on Scroll
+    AOS.init();
+
 });
 

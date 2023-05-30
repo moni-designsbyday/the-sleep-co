@@ -70,7 +70,9 @@ body{
     color: #192837;
 }
 
-.grid{min-height: 30vh; min-width: 100vw;}
+/* .grid{min-height: 30vh;} */
+
+.menu-nav-size {font-size: 1.5rem;}
 
 /* ---------- Header & footer Styles ---------- */
 
@@ -222,7 +224,40 @@ nav a{
 
 .logo h2{margin-bottom: 0;}
 
-.mobile-menu {
+
+
+.hamburger-button{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 10vh;
+    right: 8vw;
+    z-index: 2;  
+}
+
+.hamburger-button i {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.hamburger-button i:hover{
+    color: #ffbe00;
+}
+
+/* STYLES WHEN BUTTON IS ACTIVE */
+.hamburger-button.active{
+    background-color: #ffbe00;
+    color: #ffffff;
+    transform: rotate(90deg);
+    top: 10vh;
+    right: 8vw;
+  }
+
+  .hamburger-button.active i:hover{
+    color: #192837;
+  }
+
+  .mobile-menu {
     position: fixed;
     padding: 5%;
     top: 0;
@@ -234,21 +269,6 @@ nav a{
     color: #ffffff;
 }
 
-.mobile-menu:hover{
-    color: #192837;
-}
-
-.hamburger-button{
-    cursor: pointer;
-    display: inline-block;
-    position: absolute;
-    top: 5vh;
-    right: 5vw;
-    z-index: 2;  
-}
-
-/* STYLES WHEN BUTTON IS ACTIVE */
-
 .mobile-menu a {
     display: block;
     font-size: 1.5rem;
@@ -257,39 +277,9 @@ nav a{
     color: inherit;
  }
 
-.hamburger-button.active{
-    background-color: #ffbe00;
-    color: #ffffff;
-    transform: rotate(90deg);
-    top: 3vh;
-    right: 7vw;
-  }
-
-
-/* -------------------------------------------------------------------- */
-/* .hamburger-button.active{
-    background-color: #ffffff;
-    color: #ffbe00;
-  }
-  
-  .mobile-menu {
-    display: none;
-    background-color: #ffbe00;
-    padding: 5%;
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  
-  .mobile-menu a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  } */
-
+ .mobile-menu a:hover{
+    color: #192837;
+}
 
 /* ---------- General CSS Responsive styles ---------- */
 
@@ -297,15 +287,17 @@ nav a{
 .show-sm
 .show-md {display: none;}
 
+.hide-md{display: block;}
+
 .mobile-menu {display: none;}
 
 /* --- MEDIA Query Medium --- */
 
 @media(max-width:54em){
 
-    body{border: 2px solid purple; padding: 0.5rem;}
+    /* body{border: 2px solid purple; padding: 0.5rem;} */
 
-    .show-md { display:block;}
+    /* .show-md { display:block;} */
     .hide-md { display:none;}
 
     .show-sm { display:block;}
@@ -321,10 +313,17 @@ nav a{
 
 @media(max-width:48em) {
 
-    body{border: 2px solid green; padding: 0.5rem;}
+    /* body{border: 2px solid green; padding: 0.5rem;} */
 
     .show-sm { display:block;}
     .hide-sm { display:none;}
+
+    .sm-position {
+        position: absolute;
+        top: 15vh;
+        right: 49vw;
+        font-size: .25rem;
+    }
 
     .sm-text-center { text-align: center; }
   .sm-text-left { text-align: left; }
@@ -360,18 +359,13 @@ nav a{
 
 @media (max-width: 36em) {
 
-    body{
-        border: 2px solid blue;
-    padding: 0.5rem;}
+    /* body{ */
+        /* border: 2px solid blue; */
+    /* padding: 0.5rem;} */
 
    .xs-tall-30 {min-height: 30vh;}
 
-   .xs-position {
-    position: absolute;
-    top: 15vh;
-    right: 43vw;
-    font-size: .25rem;
-}
+   
 
     .show-xs { display: block; }
     .hide-xs { display: none;  }
@@ -386,7 +380,7 @@ nav a{
 
 @media (max-width: 25em) {
 
-    body{border: 2px solid lightblue; padding: 0.5rem;}
+    /* body{border: 2px solid lightblue; padding: 0.5rem;} */
 
     [class*=grid] .xxs-stack {
         flex-basis: 100%;

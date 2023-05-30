@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;700;900&display=swap" rel="stylesheet" />
 
+
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- This is our custom style css -->
     <link href="/style.css" rel="stylesheet" />
 
@@ -34,22 +38,22 @@
 <body>
 
     <!---------------- Header Banner ----------------->
-    <header class="padded grid text-center tall-90 md-tall-80">
+    <header class="padded-md grid text-center tall-90 md-tall-80">
 
         <div class="header-nav col-12-top grid">
-    <div class="col-5_sm-12 sm-padded-b-0">
+    <div class="col-5_sm-12-middle sm-padded-b-0">
         <a href="/index.html" class="logo">
             <h2 class="captials">The Sleep Co.</h2>
         </a>
     </div>
-    <nav class="col-7_sm-12 text-right hide-md">
+    <nav class="col-7_sm-12 text-right sm-text-center hide-md menu-nav-size">
         <a href="/about.html">About</a>
         <a href="/our-products.html">Products</a>
         <a href="/contact.html">Contact Us</a>
     </nav>
 
-    <div class="col-1_sm-12 show-md">
-        <div class="hamburger-button xs-position">
+    <div class="col-1_sm-12 ">
+        <div class="hamburger-button sm-position show-md">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
@@ -62,9 +66,9 @@
  </nav>
 
         
-        <div class="col-12 text-center editable"> 
+        <div class="col-12 text-center editable" data-aos="fade-in" data-aos-duration="1000"> 
             <h3> <span class="featured-text-yellow">sleep</span> like a baby</h3>
-            <h1 class="regular-weight">the ultimate mattress solution</h1>
+            <h1 class="regular-weight" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">the ultimate mattress solution</h1>
         </div>
     </header>
 
@@ -180,6 +184,9 @@
 
     <!--------------------- Add jQuery -------------------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Animate on scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-------------- custom javascript files -------------->
 <script src="/scripts.js"></script> 
