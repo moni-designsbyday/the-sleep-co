@@ -18,11 +18,27 @@ body{
 }
 
 
-/* image styles */
+/* Responsive Image Utility Classes  */
 .bg-image{
     background-image: url(/Assets/the-sleep-co-1.jpg);
     background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
 }
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.landscape-wide { padding-bottom: 56%; }
+.landscape{padding-bottom: 65%;}
+.portrait{padding-bottom: 125%;}
+.square{padding-bottom: 100%;}
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 /* Universal styles & utility classes */
 
@@ -174,9 +190,10 @@ a:hover{color: #ffbe00;}
     background-position: 100% 59%;
 }
 
-.landscape{padding-bottom: 65%;}
-.portrait{padding-bottom: 125%;}
-.square{padding-bottom: 100%;}
+/* ----- IMAGE GALLERY ----- */
+
+
+
 
 /* Icon Grid */
 
