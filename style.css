@@ -192,7 +192,27 @@ a:hover{color: #ffbe00;}
 
 /* ----- IMAGE GALLERY ----- */
 
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
 
+.gallery .gallery-item {
+    border-bottom: none;
+}
+
+/* background of gallery when active */
+.lg-backdrop {
+    background-color: #192837;
+}
+
+.lg-backdrop.in {
+    opacity: 0.9;
+}
+
+.lg-sub-html{
+    background-color:#192837 , 0.9;
+    padding: 1rem;
+}
 
 
 /* Icon Grid */

@@ -1,30 +1,38 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-dark
 gallery:
    -
       column-size: col-4_sm-12
       aspect-ratio: square
       background_image: Assets/the-sleep-co-2.jpg
+      type: pillow
    -
       column-size: col-4_sm-12
       aspect-ratio: square
       background_image: Assets/the-sleep-co-3.jpg
+      type: pillow
    -
       column-size: col-4_sm-12
       aspect-ratio: square
       background_image: Assets/the-sleep-co-4.jpg
+      type: pillow
    -
       column-size: col-12
       aspect-ratio: landscape
       background_image: Assets/the-sleep-co-1.jpg
+      type: room
    -
       column-size: col-6_sm-12
       aspect-ratio: square
       background_image: Assets/the-sleep-co-3.jpg
+      type: no-pillow
    -
       column-size: col-6_sm-12
       aspect-ratio: square
       background_image: Assets/the-sleep-co-2.jpg
+      type: no-pillow
 ---
 <!---------------- Header Banner ----------------->
 <header class="padded-md grid text-center tall-60 md-tall-80">
@@ -38,20 +46,49 @@ gallery:
 </header>
 
 <!-- Gallery Banner -->
-<section class="padded-md">
 
-    <div class="gallery grid">
+{% if page.popup-gallery == true %}
 
-        {% for item in page.gallery %}
-        <div class="{{item.column-size}}">
+<section class="padded-md {{page.gallery-background}}">
+
+   <!-- Popup Gallery -->
+   <h2>Popup Gallery</h2>
+      <div class="gallery grid gallery-item" id="lightgallery">
+
+         {% for item in page.gallery %}
+         {% if item.type == 'room' %}
+         <a class="{{item.column-size}}" href="{{item.background_image}}">
             <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> 
             </div>
-        </div>
-        {% endfor %}
+         </a>
 
-    </div>
+         {% endif %}
+
+         {% endfor %}
+
+   </div>
+   {% else %}
+      <!-- Popup from Button Gallery -->
+
+
+
+   <!-- Standard Gallery -->
+   <h2>Standard Gallery</h2>
+      <div class="gallery grid {{page.gallery-background}}">
+
+         {% for item in page.gallery %}
+         <div class="{{item.column-size}}">
+               <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> 
+               </div>
+         </div>
+         {% endfor %}
+
+      </div>
+
+      {% endif %}
 
 </section>
+
 
   <!-- <div class="col-6 ">
       <div class="bg-image square bg-img-4"> </div>
@@ -68,3 +105,18 @@ gallery:
     <div class="col-12">
       <div class="bg-image landscape-wide  bg-img-6"> </div>
     </div> -->
+
+    <!-- <h2>Popup from Button Gallery</h2>
+
+<div class="gallery grid gallery-item" id="lightgallery-2">
+
+   <a href="/Assets/the-sleep-co-4.jpg" title="White Bed">
+      View Our Range
+   </a>
+   <a href="/Assets/the-sleep-co-2.jpg" title="Pillow on Yellow Wall"></a>
+   <a href="/Assets/the-sleep-co-3.jpg" title="Dark Bedroom setting"></a>
+   <a href="/Assets/the-sleep-co-1.jpg" title="Pupper Yawning"></a>
+   <a href="/Assets/the-sleep-co-2.jpg" title="Pillow on Yellow Wall"></a>
+   <a href="/Assets/the-sleep-co-3.jpg" title="Dark Bedroom setting"></a>
+   
+</div> -->
