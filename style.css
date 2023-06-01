@@ -324,8 +324,8 @@ nav a{
 
 /* ---------- General CSS Responsive styles ---------- */
 
-.show-xs
-.show-sm
+.show-xs,
+.show-sm,
 .show-md {display: none;}
 
 .hide-md{display: block;}
