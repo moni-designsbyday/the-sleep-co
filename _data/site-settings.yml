@@ -1,22 +1,22 @@
-seo: 
-  site_name: 
-  title: 
-  description: 
-  keywords: 
-  social_image: 
-  author: 
-  favicon_image: 
-social: 
+seo:
+  site_name:
+  title:
+  description:
+  keywords:
+  social_image:
+  author:
+  favicon_image:
+social:
   instagram_username:
   facebook_url:
-  twitter_username: 
-design: 
+  twitter_username:
+design:
   dark-text_color: '#192837'
-  medium-text_color: 'rgb(120 120 125)'
-  light-text_color: '#E3ECE2'
+  medium-text_color: '#78787d'
+  light-text_color: '#e3ece2'
   featured-text_color: '#ffbe00'
   dark_color: '#192837'
-  medium_color: 'rgb(120 120 125)'
+  medium_color: '#78787d'
   light_color: '#ffffff'
   featured_color: '#ffbe00'
-  accent_color: 'rgb(120 120 125)'
+  accent_color: '#78787d'
