@@ -1,41 +1,7 @@
 <!DOCTYPE html>
 
 
-<!-- HEAD of the website- this where all the information for the site needs to go -->
-<head>
-    
-    <!-- Font Awesome Icons -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- GridLex-->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-    <!-- Google Font Catamaran (200, 400, 700, 900) -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;700;900&display=swap" rel="stylesheet" />
-
-
-    <!-- Animate on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-    <!-- LIGHT GALLERY FOR POPUPS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- This is our custom style css : Anything that I want to add MUST go above this!-->
-    <link href="/style.css" rel="stylesheet" />
-
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    <title>The Sleep Co</title>
-
-</head>
+{% include site-header.html %}
 
 
 <!-- BODY of the website - this is where all of the content for the website needs to go-->
@@ -43,40 +9,8 @@
 
     {{ content }}
 
-       <!--------------- Footer Section --------------->
+{% include site-footer.html %}
 
-       <footer class="padded grid-spaceBetween bg-dark">
-        <div class="col-4-bottom editable hide-xs">
-            <h2> Let's <span class="featured-text-yellow"> 
-                <br />connect</span> </h2>
-            <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam architecto corrupti quibusdam perferendis temporibus, pariatur, earum optio cupiditate rem tenetur amet nam nobis esse, dolor commodi quas rerum quaerat aut?</p>
-        </div>
-        <div class="col-4_xs-6-bottom text-center editable ">
-            <p> <strong>Call:</strong> <a href="tel:#"> 0413 223 342 </a></p>
-            <p> <strong>Email:</strong><a href="mailto:#"> hello@thesleep.co </a></p>
-            <p> <strong>Store:</strong> 55 Main St, Chicago</p>
-            <p> <strong>Instagram:</strong><a href="https://www.instagram.com/thesleepco"> @thesleepco</a></p>
-        </div>
-    
-        <nav class="col-4_xs-6-bottom text-right ">
-            <p><a href="/index.html">Home</a></p>
-            <p><a href="/about.html">About</a></p>
-            <p><a href="/our-products.html">Products</a></p>
-            <p><a href="/contact.html">Contact Us</a></p>
-        </nav>
-    </footer>
-
-    <!--------------------- Add jQuery -------------------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- Animate on scroll -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<!--  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
-
-<!-------------- custom javascript files -------------->
-<script src="/scripts.js"></script> 
-    
+ {% include site-javascript.html %}
 </body>
 </html>
