@@ -338,7 +338,7 @@ nav a{
 
     /* body{border: 2px solid purple; padding: 0.5rem;} */
 
-    /* .show-md { display:block;} */
+    .show-md { display:block;}
     .hide-md { display:none;}
 
     .show-sm { display:block;}
@@ -360,11 +360,12 @@ nav a{
     .hide-sm { display:none;}
 
     .sm-position {
-        position: absolute;
-        top: 15vh;
-        right: 49vw;
+        top: -13vh;
+        right: 40vw;
         font-size: .25rem;
     }
+
+    .sm-fixed {position: fixed;}
 
     .sm-text-center { text-align: center; }
   .sm-text-left { text-align: left; }
